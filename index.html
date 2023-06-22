@@ -112,7 +112,7 @@
                 document.documentElement.style.setProperty('--color', 'hsl(' + h + ', ' + s + '%, ' + l + '%)');
                 var hex = hslToHex(h, s, l);
                 document.title = hex;
-                colorElement.innerHTML = hex + "\r\nmendysapp.com";
+                colorElement.innerHTML = hex + "<br/>mendysapp.com";
                 document.documentElement.style.setProperty('--color-transparent', hex + '22');
 
                 setFavicon(hex);
