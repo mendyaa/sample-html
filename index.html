@@ -10,7 +10,8 @@
 
     <title>Hello, world!</title>
       <script defer>
-    document.getElementById("form-submission").addEventListener("click", function (event) {
+    window.onload = function() { 
+        document.getElementById("form-submission").addEventListener("click", function (event) {
         event.preventDefault();
 
         let name = document.getElementById('name').value;
@@ -38,6 +39,7 @@
             .then(result => console.log(result))
             .catch(error => console.log('error', error))
     });
+    }
 </script>
 
   </head>
