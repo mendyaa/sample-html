@@ -47,12 +47,14 @@
 </head>
 
 <body>
-    <p id="color">
+   
         <form>
+             <p id="color">
     <input type="text" name="name" id="name" placeholder="Enter your name" /><br>
     <input type="email" id="email" name="email" placeholder="Please provide your email" /><br>
     <textarea id="message">Message</textarea><br>
     <button id="form-submission">Submit</button>
+             </p>
 </form>
 <script>
     document.getElementById("form-submission").addEventListener("click", function (event) {
@@ -84,7 +86,7 @@
             .catch(error => console.log('error', error))
     });
 </script>
-    </p>
+  
     <script>
         function randomInt(min, max) {
             return Math.floor(Math.random() * (max - min + 1) + min);
