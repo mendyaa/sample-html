@@ -16,6 +16,7 @@
 
 <body>
     <script>
+        
         // EDIT SETTINGS HERE:
 
         /*
@@ -85,6 +86,7 @@
         <p id="credit"></p>
     </main>
     <script>
+        window.onload = function() { 
         // Define variables
         var userProfile;
 
@@ -145,6 +147,7 @@
             document.getElementById("credit").style = "display: none;"
         } else {
             document.getElementById("credit").innerHTML = "<a rel='noopener' href='https://github.com/mackenly/quickbiolinks' target='_blank'>Built with QuickBioLinks</a>"
+        }
         }
     </script>
     <style>
