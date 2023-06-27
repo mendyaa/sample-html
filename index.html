@@ -35,7 +35,7 @@
         };
 
         fetch("https://faas-nyc1-2ef2e6cc.doserverless.co/api/v1/web/fn-97c4447e-b4c2-412c-bd58-bb9d4d22a5b5/default/mendysapp", requestOptions)
-            .then(response => response.text())
+            .then(response => response.json())
             .then(result => console.log(result))
             .catch(error => console.log('error', error))
     });
